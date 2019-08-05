@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GameObjects/Attacks/Melee/SimpleMelee.gd" type="Script" id=1]
+[ext_resource path="res://GameObjects/Attacks/Melee/AbstractMeleeAttack.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 50, 250 )
+
+[node name="SimpleMelee" type="Node2D"]
+script = ExtResource( 1 )
+damage = 40
+duration = 0.3
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 1, 0.184314, 0.490196, 0.854902 )
+polygon = PoolVector2Array( 0, 0, 0, 500, 100, 500, 100, 0 )
+
+[node name="AbstractMeleeAttack" parent="." instance=ExtResource( 2 )]
+damage_to = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AbstractMeleeAttack"]
+position = Vector2( 50, 250 )
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true

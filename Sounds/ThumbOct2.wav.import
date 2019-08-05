@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ThumbOct2.wav-97c84e7e4020928494dba75e3f453a31.sample"
+
+[deps]
+
+source_file="res://Sounds/ThumbOct2.wav"
+dest_files=[ "res://.import/ThumbOct2.wav-97c84e7e4020928494dba75e3f453a31.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

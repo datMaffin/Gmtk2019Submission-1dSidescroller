@@ -1,0 +1,36 @@
+[gd_scene format=2]
+
+[node name="HowToPlay" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -985.0
+margin_bottom = -105.0
+
+[node name="Label" type="Label" parent="."]
+margin_top = 0.950012
+margin_right = 123.9
+margin_bottom = 65.95
+text = "Walk Left/Right:
+Teleport Left/Right:
+Attack Left/Right:
+Pause:"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 160.0
+margin_top = -0.949982
+margin_right = 255.0
+margin_bottom = 128.05
+text = "Arrow Keys
+A/D
+Q/E
+Esc or Space"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 260.0
+margin_top = -0.949982
+margin_right = 366.85
+margin_bottom = 130.55
+text = "DPad
+L1/R1
+L2/R2 or X/B
+Start"

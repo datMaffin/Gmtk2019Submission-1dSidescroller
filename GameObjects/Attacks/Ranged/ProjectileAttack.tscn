@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GameObjects/Attacks/Ranged/ProjectileAttack.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 35, 250 )
+
+[node name="ProjectileAttack" type="Area2D"]
+script = ExtResource( 1 )
+velocity = -150
+damage = 100
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 1, 0.184314, 0.490196, 0.854902 )
+polygon = PoolVector2Array( 0, 0, 0, 500, 70, 500, 70, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 35, 250 )
+shape = SubResource( 1 )
